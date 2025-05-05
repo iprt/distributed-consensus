@@ -1,4 +1,4 @@
-package io.intellij.distributed.threads.basic;
+package io.intellij.distributed.threads.basic.message;
 
 /**
  * Accept

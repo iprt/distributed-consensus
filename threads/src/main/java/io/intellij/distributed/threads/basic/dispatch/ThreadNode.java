@@ -1,24 +1,24 @@
 package io.intellij.distributed.threads.basic.dispatch;
 
-import io.intellij.distributed.threads.basic.NodeOperator;
+import io.intellij.distributed.threads.basic.BasicNodeOperator;
 
 import java.util.concurrent.BlockingQueue;
 
 /**
- * NodeThread
+ * ThreadNode
  *
  * @author tech@intellij.io
  * @since 2025-04-23
  */
-public interface NodeThread extends NodeOperator {
+public interface ThreadNode extends BasicNodeOperator {
 
     void startThread();
 
     void stopThread();
 
-    BlockingQueue<MsgWrapper> getMsgQueue();
+    BlockingQueue<MsgData> getMsgQueue();
 
     default void addMsg(MsgType msgType, Object msg) {
-        getMsgQueue().add(new MsgWrapper(msgType, msg));
+        getMsgQueue().add(new MsgData(msgType, msg));
     }
 }
