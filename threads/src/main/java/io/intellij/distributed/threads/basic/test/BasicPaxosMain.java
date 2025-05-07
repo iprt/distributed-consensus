@@ -1,7 +1,7 @@
 package io.intellij.distributed.threads.basic.test;
 
-import io.intellij.distributed.threads.basic.dispatch.ThreadNode;
 import io.intellij.distributed.threads.basic.dispatch.NodeAdapter;
+import io.intellij.distributed.threads.basic.dispatch.ThreadNode;
 
 import java.util.List;
 

@@ -1,7 +1,5 @@
 package io.intellij.distributed.threads.basic;
 
-import java.util.List;
-
 /**
  * NodeOperator
  *
